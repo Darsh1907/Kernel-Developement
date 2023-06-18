@@ -26,7 +26,9 @@ To use this module, you need to have a Linux system with a working kernel build 
 
 3. Build the kernel module by running the following command:
 
-<code>make</code>
+```
+make  
+```
 
 ![2](https://github.com/Darsh1907/Kernel-Developement/assets/118650412/60405f90-48c5-4e0b-b0e1-7d38de6190f6)
 
