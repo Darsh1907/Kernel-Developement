@@ -34,31 +34,41 @@ make
 
 4. Load the module into the kernel using the following command:
 
+```
 sudo insmod main.ko
+```
 
 ![3](https://github.com/Darsh1907/Kernel-Developement/assets/118650412/a0a3af60-b7a0-4c40-8027-85e055f3706a)
 
 5. You can check whether the module is loaded or not using:
 
-lsmod 
+```
+lsmod
+```
 
 ![4](https://github.com/Darsh1907/Kernel-Developement/assets/118650412/43884622-044c-4576-bec1-b50defd1328a)
 
 6. You can check the module info using:
 
+```
 sudo modinfo main.ko
+```
 
 ![5](https://github.com/Darsh1907/Kernel-Developement/assets/118650412/652e1f69-eba8-4f3c-8671-3f0d7e691eed)
 
 7. Check the kernel log to see the DFS traversal of the process tree:
 
+```
 dmesg
+```
 
 ![6](https://github.com/Darsh1907/Kernel-Developement/assets/118650412/87782076-620f-400a-afce-27148991a634)
 
 8. After you have finished, unload the module from the kernel:
 
+```
 sudo rmmod main
+```
 
 ![7](https://github.com/Darsh1907/Kernel-Developement/assets/118650412/3d8bcfd5-a73f-4842-a039-ec793e5499c3)
 
@@ -69,7 +79,9 @@ Before building the kernel module, ensure that you have a working kernel build e
 
 The provided Makefile simplifies the build process. Open a terminal and navigate to the module directory. Run the following command to build the module:
 
+```
 make
+```
 
 This command will compile the module using the kernel build system. The resulting object file (`main.o`) will be generated in the same directory.
 
